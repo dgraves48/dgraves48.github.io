@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>My Website</title>
+    <title>Groundwater Recharge in Variable Climates</title>
     <link rel="icon" type="image/x-icon" href="images/drop.ico">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,28 +19,55 @@
 
 
 <body>
-    <h1>Boom Boom yeah</h1>
+    <h1>What does a changing climate mean for our groundwater?</h1>
+    <h2>Simulations from a groundwater flow model of the Southern Great Basin</h2>
     <p id="Name">Daniel Graves</p>
     <div class="divider"></div>
-    <p>I'm hosted with GitHub Pages. Lots of text. Lots of text.
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum
+    <p><a
+            href="https://www.nytimes.com/interactive/2023/08/28/climate/groundwater-drying-climate-change.html?pgtype=Article&action=click&module=RelatedLinks">Groundwater
+            levels are declining</a> across much of the world and the United States. Whether it’s for agriculture,
+        industry, or residential areas, <a
+            href="https://ourworldindata.org/water-use-stress#:~:text=A%20growing%20global%20population%20and,is%20shown%20in%20the%20chart.">humans
+            are using more fresh water</a>, which often comes from groundwater sources.
+        This depletes the supply that has built up over thousands of years.
     </p>
-    <img src="images/rhode_island.png">
-    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at
-        its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
-        opposed
-        to using 'Content here, content here', making it look like readable English. Many desktop publishing packages
-        and
-        web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover
-        many
-        web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes
-        on
-        purpose (injected humour and the like).</p>
+    <p>But what about a changing climate? What does that mean for our groundwater supplies? Let’s take a look at this
+        through simulations from a groundwater model of the Southern Great Basin.</p>
+    <p>The Southern Great Basin covers parts of southern Nevada and southern California and is one of the hottest and
+        driest places in the United States.</p>
+    <p>Additionally, it has become both hotter and drier since the late 20th century. </p>
+    <p>In the deeper past, the climate in the region has been much different, both much colder and much wetter. </p>
+    <p>To understand what these variable past and future climates mean for groundwater in the region, I built a
+        groundwater model.</p>
+    <img src="images/basin_web.png">
+    <p>The model works by adding water through precipitation, removing water through evaporation, and moving water along
+        the water table gradient. Under different climates (varying precipitation and temperature), evaporation and
+        infiltration vary, and the lake size adjusts until water inputs and outputs balance. In each climate, I
+        determine the amount of groundwater recharge by how fast water is cycling through the system. So, let’s get some
+        intuition for how the rate of recharge varies under different climates. </p>
+    <img src="images/turnover_web.png">
+    <p>In wet climates, recharge is much faster than in dry climates: more precipitation means more water flowing
+        through the system. Also, in cold climates, recharge is faster than in hot climates: less evaporation means more
+        water infiltrates into the system. However, temperature variability is less significant than precipitation
+        variability.</p>
+    <p>One note here is that the values for turnover time from the model are inaccurate because of model uncertainty,
+        but the relative values are good.</p>
+    <p>Now that we understand how climate influences groundwater over long time scales, what do we know about short term
+        variability? Let’s see how long basins take to respond after the climate shifts. In particular, what features of
+        a basin cause longer or shorter responses?</p>
+    <img class='bigimg' src="images/simulations_web.png">
+    <p>For these simulations, I introduced one of six climate forcings (wetter; drier; colder and wetter; colder and
+        drier; hotter and wetter; hotter and drier). I then calculated how long basins of varying width and slope took
+        to reach half of the expected lake change. Since lake area determines the balance of water inputs and outputs,
+        it is a good measure for basin sensitivity.</p>
+    <p>In both bigger and steeper basins, response to climate forcings was slower. In big basins, it takes longer for
+        water to flow through the system, so climate changes have a longer lag time. In steep basins, lake volume has to
+        change much more than in shallow basins, so it takes longer to fill or empty the lake.</p>
+    <p>Where do we go from here? As we know, groundwater pumping can significantly influence groundwater resources.
+        Climate can too, changing recharge rate by orders of magnitude. As groundwater management becomes a bigger and
+        bigger challenge, local and regional governments should incorporate climate projections into their decision
+        making. Also, given the response variation across different types of basins, regulators should consider how
+        quickly their particular locations might adjust to climate variability.</p>
     <h2>About this story</h2>
     <p>Here’s a <a href="https://www.brown.edu/">link</a>.</p>
     <p>Just adding text for fun</p>

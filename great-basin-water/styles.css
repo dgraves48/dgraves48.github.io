@@ -1,3 +1,4 @@
+a,
 img,
 p,
 h1,
@@ -9,6 +10,10 @@ h2,
     margin-right: auto;
 }
 
+a {
+    color: #08589e
+}
+
 img {
     display: block;
     padding: 15px 0px;
@@ -17,24 +22,28 @@ img {
 p {
     font-size: 18px;
     line-height: 1.4;
-    font-family: "Crimson Text";
+    font-family: "Georgia";
 }
 
 h1,
 h2 {
-    font-family: "Roboto";
+    font-family: "Helvetica";
 }
 
 .divider {
     height: 2px;
-    background-color: #0868ac;
+    background-color: #08589e;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
+.bigimg {
+    max-width: 1200px;
+}
+
 #Name {
-    font-size: 35px;
+    font-size: 20px;
     line-height: 1.4;
-    font-family: "Crimson Text";
-    color: purple
+    font-family: "Georgia";
+    color: #08589e
 }
